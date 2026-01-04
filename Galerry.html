@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery Album | Legends Rock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="Galerry.html">GALLERY</a>
+    <a href="contact.html">CONTACT</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <h1>Gallery Album</h1>
+    <p>Koleksi album Rock • Punk • Metal terbaik sepanjang masa</p>
+</header>
+
+<!-- FILTER -->
+<section>
+    <h2>Filter Genre</h2>
+    <button onclick="filterAlbum('all')">ALL</button>
+    <button onclick="filterAlbum('metal')">METAL</button>
+    <button onclick="filterAlbum('punk')">PUNK</button>
+    <button onclick="filterAlbum('alternative')">ALTERNATIVE</button>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="albumList">
+
+    <!-- ALBUM 1 -->
+    <div class="album" data-genre="metal">
+        <img src="A7X.Jpg">
+        <h3>Avenged Sevenfold</h3>
+        <p>Album: Nightmare (2010)</p>
+        <p>Genre: Metal</p>
+        <p>Harga: Rp150.000</p>
+        <button onclick="beli('Avenged Sevenfold - Nightmare')">Beli Album</button>
+    </div>
+
+    <!-- ALBUM 2 -->
+    <div class="album" data-genre="punk">
+        <img src="MCR.png">
+        <h3>My Chemical Romance</h3>
+        <p>Album: The Black Parade (2006)</p>
+        <p>Genre: Punk</p>
+        <p>Harga: Rp130.000</p>
+        <button onclick="beli('MCR - The Black Parade')">Beli Album</button>
+    </div>
+
+    <!-- ALBUM 3 -->
+    <div class="album" data-genre="alternative">
+        <img src="radiohead.jpg">
+        <h3>Radiohead</h3>
+        <p>Album: OK Computer (1997)</p>
+        <p>Genre: Alternative</p>
+        <p>Harga: Rp180.000</p>
+        <button onclick="beli('Radiohead - OK Computer')">Beli Album</button>
+    </div>
+
+    <!-- ALBUM 4 -->
+    <div class="album" data-genre="alternative">
+        <img src="Oasis.jpg">
+        <h3>Oasis</h3>
+        <p>Album: Morning Glory (1995)</p>
+        <p>Genre: Alternative</p>
+        <p>Harga: Rp160.000</p>
+        <button onclick="beli('Oasis - Morning Glory')">Beli Album</button>
+    </div>
+
+    <!-- ALBUM 5 -->
+    <div class="album" data-genre="punk">
+        <img src="greenday.jpeg">
+        <h3>Green Day</h3>
+        <p>Album: American Idiot (2004)</p>
+        <p>Genre: Punk</p>
+        <p>Harga: Rp140.000</p>
+        <button onclick="beli('Green Day - American Idiot')">Beli Album</button>
+    </div>
+
+    <!-- ALBUM 6 -->
+    <div class="album" data-genre="metal">
+        <img src="bmth.jpg">
+        <h3>Bring Me The Horizon</h3>
+        <p>Album: That's The Spirit (2015)</p>
+        <p>Genre: Metal</p>
+        <p>Harga: Rp170.000</p>
+        <button onclick="beli('BMTH - That’s The Spirit')">Beli Album</button>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 Legends Rock Music Store <br>
+    Gallery Album
+</footer>
+
+</body>
+</html>
